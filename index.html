@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e60073">
+  <meta name="description" content="Arsip dokumentasi dan penyelesaian kasus internal Ratu Paket Lebaran.">
+  <title>Arsip Kasus | Ratu Paket Lebaran</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#beranda" aria-label="Ratu Paket Lebaran, beranda">
+        <span class="logo-frame">
+          <img src="assets/logo.png" alt="Logo Ratu Paket Lebaran"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <span class="logo-fallback" hidden>RPL</span>
+        </span>
+        <span class="brand-text">
+          <strong>RATU PAKET LEBARAN</strong>
+          <small>ARSIP KASUS INTERNAL</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#informasi">Informasi</a>
+        <a href="#arsip">Arsip Kasus</a>
+        <a href="#solusi">Pusat Solusi</a>
+        <a href="#panduan">Panduan</a>
+        <a href="#galeri">Galeri</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="beranda">
+      <div class="hero-content">
+        <span class="eyebrow">DOKUMENTASI INTERNAL</span>
+        <h1>Arsip Kasus <span>Ratu Paket Lebaran</span></h1>
+        <p>
+          Pusat dokumentasi internal untuk menyimpan arsip kasus,
+          catatan penyelesaian, dan dokumentasi pendukung secara terstruktur.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#arsip">Lihat Arsip Kasus</a>
+          <a class="button button-outline" href="#galeri">Lihat Dokumentasi</a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">✦</span>
+          <p>Gunakan arsip secara bertanggung jawab dan verifikasi setiap informasi.</p>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustrasi arsip Ratu Paket Lebaran">
+        <div class="art-glow"></div>
+        <div class="art-card">
+          <div class="art-top">
+            <span>RATU PAKET LEBARAN</span>
+            <span>✦</span>
+          </div>
+          <div class="art-tagline">
+            <span class="tagline-line"></span>
+            <p>ARSIP & DOKUMENTASI</p>
+            <span class="tagline-line"></span>
+          </div>
+          <div class="art-symbol" aria-hidden="true">▤</div>
+          <div class="art-message">
+            <span>TERTATA</span><span>TERDOKUMENTASI</span>
+          </div>
+          <p class="art-description">Catatan internal pengelola</p>
+          <div class="art-line"></div>
+          <div class="art-line short"></div>
+          <div class="art-bottom">
+            <span>ARSIP KASUS</span>
+            <span>RPL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="informasi">
+      <div class="notice">
+        <div class="notice-icon" aria-hidden="true">!</div>
+        <div>
+          <h2>Informasi Penggunaan Arsip</h2>
+          <p>
+            Halaman ini ditujukan untuk dokumentasi internal. Informasi yang
+            ditampilkan harus sesuai dengan catatan dan bukti yang telah
+            diverifikasi. Jangan menyebarkan identitas, dokumen pribadi, atau
+            tuduhan yang belum terverifikasi kepada pihak yang tidak berwenang.
+          </p>
+          <p class="quote">
+            Simpan bukti secara aman, periksa informasi, dan batasi akses sesuai kebutuhan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Statistik arsip">
+      <article class="stat-card">
+        <div class="stat-icon" aria-hidden="true">▤</div>
+        <div>
+          <strong id="totalCases">0</strong>
+          <span>Total arsip kasus</span>
+        </div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon" aria-hidden="true">✓</div>
+        <div>
+          <strong id="resolvedCases">0</strong>
+          <span>Arsip berstatus selesai</span>
+        </div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon" aria-hidden="true">◷</div>
+        <div>
+          <strong id="periodCount">0</strong>
+          <span>Periode arsip</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section section-wrap" id="arsip">
+      <div class="section-heading">
+        <span class="eyebrow">DOKUMENTASI KASUS</span>
+        <h2>Daftar Arsip Kasus</h2>
+        <p>Cari arsip berdasarkan kata kunci, periode, atau status.</p>
+      </div>
+
+      <div class="filter-panel">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search"
+            placeholder="Cari nama, nomor arsip, atau kata kunci..."
+            autocomplete="off" aria-label="Cari arsip kasus">
+        </label>
+
+        <label class="filter-field">
+          <span>Periode</span>
+          <select id="periodFilter" aria-label="Filter periode">
+            <option value="">Semua periode</option>
+          </select>
+        </label>
+
+        <label class="filter-field">
+          <span>Status</span>
+          <select id="statusFilter" aria-label="Filter status">
+            <option value="">Semua status</option>
+            <option value="Selesai">Selesai</option>
+            <option value="Dalam daftar hitam">Daftar hitam internal</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="result-line" id="resultLine" aria-live="polite">Memuat arsip...</p>
+      <div class="case-grid" id="caseGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h3>Arsip tidak ditemukan</h3>
+        <p>Coba kata kunci lain atau ubah filter pencarian.</p>
+      </div>
+    </section>
+
+    <section class="solution-section" id="solusi">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <span class="eyebrow">PENGELOLAAN ARSIP</span>
+          <h2>Pusat Solusi</h2>
+          <p>Langkah umum untuk mengelola dokumentasi dan tindak lanjut kasus.</p>
+        </div>
+        <div class="solution-grid">
+          <article class="solution-card">
+            <span class="solution-number">01</span>
+            <h3>Periksa Dokumen</h3>
+            <p>Pastikan dokumen pendukung terbaca, relevan, dan berasal dari sumber yang dapat diperiksa.</p>
+          </article>
+          <article class="solution-card">
+            <span class="solution-number">02</span>
+            <h3>Catat Kronologi</h3>
+            <p>Susun kejadian berdasarkan tanggal dan bukti. Bedakan fakta, pernyataan, serta informasi yang belum dikonfirmasi.</p>
+          </article>
+          <article class="solution-card">
+            <span class="solution-number">03</span>
+            <h3>Dokumentasikan Tindak Lanjut</h3>
+            <p>Catat tindakan yang benar-benar dilakukan, hasilnya, dan dokumen pendukung keputusan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="panduan">
+      <div class="guide-panel">
+        <div>
+          <span class="eyebrow">PANDUAN PENGELOLA</span>
+          <h2>Arsip yang rapi membantu proses peninjauan.</h2>
+          <p>
+            Lengkapi informasi berdasarkan catatan yang tersedia.
+            Jangan mengisi kronologi atau hasil penyelesaian dengan perkiraan
+            yang belum dapat dibuktikan.
+          </p>
+        </div>
+        <div class="guide-list">
+          <p><span>1</span> Gunakan nomor arsip yang konsisten.</p>
+          <p><span>2</span> Cocokkan nama file dengan dokumen yang dimaksud.</p>
+          <p><span>3</span> Simpan salinan bukti di tempat yang aman.</p>
+          <p><span>4</span> Batasi akses ke dokumen identitas dan informasi pribadi.</p>
+          <p><span>5</span> Perbarui status hanya jika ada dasar yang jelas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeri">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <span class="eyebrow">FOTO & VIDEO</span>
+          <h2>Galeri Dokumentasi</h2>
+          <p>Dokumentasi pendukung yang terdaftar dalam arsip internal.</p>
+        </div>
+
+        <div class="gallery-filter" role="group" aria-label="Filter galeri">
+          <button class="gallery-filter-btn active" type="button"
+            data-gallery-filter="semua" aria-pressed="true">Semua</button>
+          <button class="gallery-filter-btn" type="button"
+            data-gallery-filter="video" aria-pressed="false">Video korban</button>
+          <button class="gallery-filter-btn" type="button"
+            data-gallery-filter="office" aria-pressed="false">Di office</button>
+          <button class="gallery-filter-btn" type="button"
+            data-gallery-filter="polisi" aria-pressed="false">Kunjungan polisi</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <div class="empty-state" id="galleryEmptyState" hidden>
+          <span aria-hidden="true">▧</span>
+          <h3>Dokumentasi tidak ditemukan</h3>
+          <p>Belum ada item untuk kategori ini.</p>
+        </div>
+
+        <div class="gallery-note">
+          Pastikan dokumentasi memiliki konteks dan izin penggunaan yang sesuai.
+          Hindari membagikan foto, video, atau identitas pribadi secara terbuka
+          tanpa dasar dan kewenangan yang tepat.
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h3 class="footer-brand">
+      RATU PAKET <span>LEBARAN</span>
+    </h3>
+
+    <p class="footer-description">
+      Arsip dan Dokumentasi Internal Pengelola
+    </p>
+
+    <p class="footer-creator">
+      Dikembangkan oleh <strong>Fifi Fadilah</strong>
+    </p>
+
+    <p class="footer-copyright">
+      &copy; <span id="currentYear"></span>
+      Ratu Paket Lebaran. Hak cipta dilindungi.
+    </p>
+  </div>
+</footer>
+
+  <dialog class="case-dialog" id="caseDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header">
+      <span class="eyebrow">DETAIL ARSIP</span>
+      <button class="close-dialog" id="closeDialog" type="button"
+        aria-label="Tutup detail kasus">&times;</button>
+    </div>
+    <div class="dialog-content" id="dialogContent"></div>
+  </dialog>
+
+  <dialog class="gallery-dialog" id="galleryDialog" aria-label="Detail dokumentasi galeri">
+    <button class="close-dialog gallery-close" id="closeGalleryDialog" type="button"
+      aria-label="Tutup dokumentasi">&times;</button>
+    <div class="dialog-content" id="galleryDialogContent"></div>
+  </dialog>
+</body>
+</html>
