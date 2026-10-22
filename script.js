@@ -173,12 +173,14 @@ const galleryItems = [
     src: "assets/galeri/kunjungan.jpg"
   },
    {
-  title: "Dokumentasi Pernyataan Sub Agen 2 Ida Varida",
-  description: "Rekaman dokumentasi pernyataan terkait penggunaan dana anggota dan reseller sebesar Rp263.032.000 serta rencana pengembalian dana pada 11 Maret 2025. Dokumentasi ini memuat pernyataan dalam rekaman dan bukan merupakan penetapan hukum.",
+  id: "video-pelaku",
   category: "video",
   type: "video",
-  path: "assets/galeri/vidpelaku.mp4",
-  date: "Dokumentasi pernyataan"
+  label: "VIDEO PERNYATAAN",
+  title: "Dokumentasi Pernyataan Sub Agen 2 Ida Varida",
+  description: "Rekaman dokumentasi pernyataan terkait penggunaan dana anggota dan reseller sebesar Rp263.032.000 serta rencana pengembalian dana pada 11 Maret 2025. Dokumentasi ini memuat pernyataan dalam rekaman dan bukan merupakan penetapan hukum.",
+  date: "Dokumentasi pernyataan",
+  src: "assets/galeri/vidpelaku.mp4"
 }
 ];
 
