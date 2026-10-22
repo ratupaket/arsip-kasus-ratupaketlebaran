@@ -143,43 +143,39 @@ const cases = [
 
 const galleryItems = [
   {
-    id: "video-korban",
-    category: "video",
-    type: "video",
-    label: "VIDEO KORBAN",
-    title: "Dokumentasi Video Korban",
-    description: "Dokumentasi video terkait laporan kasus Ratu Paket Lebaran.",
-    date: "Tanggal belum diisi",
-    src: "assets/galeri/vidkorban.mp4"
-  },
-  {
-    id: "foto-korban",
-    category: "video",
-    type: "image",
-    label: "FOTO KORBAN",
-    title: "Dokumentasi Foto Korban",
-    description: "Dokumentasi foto terkait laporan kasus Ratu Paket Lebaran.",
-    date: "Tanggal belum diisi",
-    src: "assets/galeri/korban.jpeg"
-  },
-  {
-    id: "kunjungan-polisi",
-    category: "polisi",
-    type: "image",
-    label: "KUNJUNGAN POLISI",
-    title: "Dokumentasi Kunjungan Polisi",
-    description: "Dokumentasi kunjungan ke lokasi terkait laporan kasus.",
-    date: "Tanggal belum diisi",
-    src: "assets/galeri/kunjungan.jpg"
-  },
-   {
+  id: "video-korban",
+  category: "video",
+  type: "video",
+  label: "VIDEO KORBAN",
+  title: "Dokumentasi Video Korban",
+  description: "Dokumentasi video terkait laporan kasus Ratu Paket Lebaran.",
+  src: "assets/galeri/vidkorban.mp4"
+},
+{
+  id: "foto-korban",
+  category: "video",
+  type: "image",
+  label: "FOTO KORBAN & PELAKU",
+  title: "Dokumentasi Foto Korban & Pelaku",
+  description: "Dokumentasi foto terkait laporan kasus Ratu Paket Lebaran.",
+  src: "assets/galeri/korban.jpeg"
+},
+{
+  id: "kunjungan-polisi",
+  category: "polisi",
+  type: "image",
+  label: "KUNJUNGAN POLISI",
+  title: "Dokumentasi Kunjungan Polisi",
+  description: "Dokumentasi kunjungan ke lokasi terkait laporan kasus.",
+  src: "assets/galeri/kunjungan.jpg"
+},
+{
   id: "video-pelaku",
   category: "video",
   type: "video",
   label: "VIDEO PERNYATAAN",
   title: "Dokumentasi Pernyataan Sub Agen 2 Ida Varida",
   description: "Rekaman dokumentasi pernyataan terkait penggunaan dana anggota dan reseller sebesar Rp263.032.000 serta rencana pengembalian dana pada 11 Maret 2025. Dokumentasi ini memuat pernyataan dalam rekaman dan bukan merupakan penetapan hukum.",
-  date: "Dokumentasi pernyataan",
   src: "assets/galeri/vidpelaku.mp4"
 }
 ];
